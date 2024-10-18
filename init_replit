@@ -1,3 +1,4 @@
+python main2.py
 #!/bin/bash
 
 # Update Git submodules
