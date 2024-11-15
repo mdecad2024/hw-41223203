@@ -134,11 +134,10 @@ openByGet();
 <p></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aTSTGwykRDo?si=lwfVLhBMOYjZ_he_" title="YouTube video player" width="560"></iframe></p>
 <p><img caption="false" height="383" src="/images/HW1.png" width="500"/></p>
-<p><a href="https://mdecad2024.github.io/hw-41223203/cmsimde/static/viewstl.html?src=https://s104.cycu.org/~41223203/HW1.stl">https://mdecad2024.github.io/hw-41223203/cmsimde/static/viewstl.html?src=https://s104.cycu.org/~41223203/HW1.stl</a></p>
-<p>
+<p><a href="https://mdecad2024.github.io/hw-41223203/cmsimde/static/viewstl.html?src=https://s104.cycu.org/~41223203/HW1.stl">https://mdecad2024.github.io/hw-41223203/cmsimde/static/viewstl.html?src=https://s104.cycu.org/~41223203/HW1.stl</a>
 <script src="/static/jsc3d.js" type="text/javascript"></script>
 </p>
-<div id="models"><canvas height="300" id="cv1" style="border: 1px solid;" width="400"></canvas> <!-- 可以添加更多的 canvas --></div>
+<div id="models"><canvas height="300" id="cv1" style="border: 1px solid;" width="400">id="cv2" style="border: 1px solid;" width="400"&gt;</canvas> <canvas height="300" id="cv3" style="border: 1px solid;" width="400"></canvas> <canvas canvas="" height="300"> <!-- 可以添加更多的 canvas --></canvas></div>
 <div style="width: 400px; height: 70px; border: 1px solid;">Model Color:<input id="mdlClr" onchange="changeOption('ModelColor',this.value)" style="margin-right: 50px;" type="color" value="#00ff40"/> Back Color1:<input id="bckClr1" onchange="changeOption('BackgroundColor1',this.value)" style="margin-right: 50px;" type="color"/> Back Color2:<input id="bckClr2" onchange="changeOption('BackgroundColor2',this.value)" type="color"/><br/> Render Mode:<select id="render" onchange="changeOption('RenderMode',this.value)">
 <option>Flat</option>
 <option>Point</option>
@@ -149,7 +148,7 @@ openByGet();
 <option>low</option>
 <option>high</option>
 </select></div>
-<p style="padding-left: 30px;">
+<p>
 <script type="text/javascript">
 var viewers = [];
 
@@ -200,7 +199,8 @@ function openByUrl(){
 function openByGet(){
     var urls = [
         "https://41223203@s104.cycu.org/~41223203/HW1.stl",
-        "https://s104.cycu.org/~scrum1/41223199_part99.stl"
+        "https://41223203@s104.cycu.org/~41223203/作業一之一.stl"
+        "https://41223203@s104.cycu.org/~41223203/Practise1.stl"
     ];
     var opt = getOptions();
     urls.forEach((url, index) => {
@@ -212,87 +212,10 @@ function openByGet(){
 openByGet();
 </script>
 </p>
-<p style="padding-left: 30px;"></p>
-<p style="padding-left: 30px;">影片標題: 國立虎尾科技大學機械設計工程系電腦輔助設計與實習- 作業一之一<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/nzK3TJBS9f0?si=2zVeVuQHQrhTRAVr" title="YouTube video player" width="560"></iframe></p>
-<p style="padding-left: 30px;"><img alt="" height="440" src="/images/作業一之一.png" width="500"/></p>
-<p style="padding-left: 30px;">所完成的零件檔案下載</p>
-<p style="padding-left: 30px;"><a href="https://mdecad2024.github.io/hw-mdecycu/cmsimde/static/viewstl.html?src=https://41223203@s104.cycu.org/~41223203/%E4%BD%9C%E6%A5%AD%E4%B8%80%E4%B9%8B%E4%B8%80.stl">https://mdecad2024.github.io/hw-mdecycu/cmsimde/static/viewstl.html?src=https://41223203@s104.cycu.org/~41223203/%E4%BD%9C%E6%A5%AD%E4%B8%80%E4%B9%8B%E4%B8%80.stl</a></p>
-<p style="padding-left: 30px;">
-<script src="/static/jsc3d.js" type="text/javascript"></script>
-</p>
-<div id="models"><canvas height="300" id="cv1" style="border: 1px solid;" width="400"></canvas> <!-- 可以添加更多的 canvas --></div>
-<div style="width: 400px; height: 70px; border: 1px solid;">Model Color:<input id="mdlClr" onchange="changeOption('ModelColor',this.value)" style="margin-right: 50px;" type="color" value="#00ff40"/> Back Color1:<input id="bckClr1" onchange="changeOption('BackgroundColor1',this.value)" style="margin-right: 50px;" type="color"/> Back Color2:<input id="bckClr2" onchange="changeOption('BackgroundColor2',this.value)" type="color"/><br/> Render Mode:<select id="render" onchange="changeOption('RenderMode',this.value)">
-<option>Flat</option>
-<option>Point</option>
-<option>Wireframe</option>
-<option>Smooth</option>
-</select>Definition:<select id="defini" onchange="changeOption('Definition',this.value)">
-<option>Standard</option>
-<option>low</option>
-<option>high</option>
-</select></div>
-<p style="padding-left: 30px;">
-<script type="text/javascript">
-var viewers = [];
-
-function getOptions(){
-    var mc = document.getElementById("mdlClr").value;
-    var bc1 = document.getElementById("bckClr1").value;
-    var bc2 = document.getElementById("bckClr2").value;
-    var ren = document.getElementById("render").value;
-    var def = document.getElementById("defini").value;
-    return {ModelColor: mc, BackgroundColor1: bc1, BackgroundColor2: bc2, RenderMode: ren, Definition: def};
-}
-
-function readSTLfile(opt, canvasId){
-    var canvas = document.getElementById(canvasId);
-    var viewer = new JSC3D.Viewer(canvas);
-    viewer.setParameter('SceneUrl', opt.SceneUrl);
-    viewer.setParameter('InitRotationX', 0);
-    viewer.setParameter('InitRotationY', 0);
-    viewer.setParameter('InitRotationZ', 0);
-    viewer.setParameter('ModelColor', opt.ModelColor);
-    viewer.setParameter('BackgroundColor1', opt.BackgroundColor1);
-    viewer.setParameter('BackgroundColor2', opt.BackgroundColor2);
-    viewer.setParameter('RenderMode', opt.RenderMode);
-    viewer.setParameter('Definition', opt.Definition);
-    viewer.init();
-    viewer.update();
-    viewers.push(viewer); // 保存 viewer 實例
-}
-
-function changeOption(strOpt,strValue){
-    console.log("change " + strOpt + " to " + strValue);
-    viewers.forEach(viewer => {
-        viewer.setParameter(strOpt, strValue);
-        viewer.init();
-        viewer.update();
-    });
-}
-
-function openByUrl(){
-    var url = document.getElementById("url").value;
-    var opt = getOptions();
-    opt.SceneUrl = url;
-    // 可以添加更多的 STL URL
-    readSTLfile(opt, 'cv1'); // 為每個 canvas 調用
-    readSTLfile(opt, 'cv2'); // 第二個 canvas
-}
-
-function openByGet(){
-    var urls = [
-        "https://41223203@s104.cycu.org/~41223203/作業一之一.stl",
-    ];
-    var opt = getOptions();
-    urls.forEach((url, index) => {
-        opt.SceneUrl = url;
-        readSTLfile(opt, 'cv' + (index + 1)); // 動態生成 canvas ID
-    });
-}
-
-openByGet();
-</script>
-</p>
+<p></p>
+<p style="padding-left: 30px;"><span>影片標題: 國立虎尾科技大學機械設計工程系電腦輔助設計與實習- 作業一之一</span><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/nzK3TJBS9f0?si=UV8qDRKUzxes0fvs" title="YouTube video player" width="560"></iframe></p>
+<p style="padding-left: 30px;"><span><img alt="" height="440" src="/images/作業一之一.png" width="500"/></span></p>
+<p style="padding-left: 30px;"><span></span></p>
 <p style="padding-left: 30px;">影片標題: 國立虎尾科技大學機械設計工程系電腦輔助設計與實習- 作業一之二<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8A4kIcRmA9k?si=cP71HdnAvTBBXzVJ" title="YouTube video player" width="560"></iframe></p>
 <p style="padding-left: 30px;"><img alt="" height="434" src="/images/作業一之二.png" width="500"/></p>
 <p style="padding-left: 30px;">所完成的零件檔案下載</p>
@@ -308,7 +231,10 @@ openByGet();
 <p>        這是我第一次接觸到<span>Solvespace，許多指令都不太熟悉，需要一邊畫一邊詢問老師和同學，所以沒辦法很快速地完成這項作業，但我還是會盡力的把它完成，希望之後畫圖的速度可以加快!</span></p>
 <p style="padding-left: 30px;">......</p>
 <p>HW1 自評分數:10</p>
-<p style="padding-left: 30px;">完成上述流程後, 請將 HW1 自評分數輸入 cad2024 自評表單中.</p><h2>HW1_Exam</h2>
+<p style="padding-left: 30px;">完成上述流程後, 請將 HW1 自評分數輸入 cad2024 自評表單中.</p>
+<h2>stl</h2>
+<p></p>
+<h2>HW1_Exam</h2>
 <p>從<a href="http://229.cycu.org/part_modeling_projects.pdf">零件模擬練習</a>中選出零件, 隨堂進行考試.</p>
 <p>零件考試題目以 Solvespace 繪圖操作過程影片如下:</p>
 <p style="padding-left: 30px;">請將操作影片嵌入 ......</p>
